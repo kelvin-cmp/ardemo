@@ -1,7 +1,20 @@
 const onxrloaded = () => {
   XR8.XrController.configure({
     imageTargetData: [
-      require('assets/target/target.json'),
+      {
+  "imagePath": "assets/target/target.jpg",
+  "name": "target_jelly",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 995,
+    "height": 1326,
+    "isRotated": false,
+    "originalWidth": 995,
+    "originalHeight": 1326
+  }
+},
       
     ],
   })
