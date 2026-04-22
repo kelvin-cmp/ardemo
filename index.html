@@ -33,6 +33,14 @@
         <a-asset-item id="sandCastleModel" src="assets/gate.glb"></a-asset-item>
       </a-assets>
 
+      <a-assets>
+    <!-- Define the video asset -->
+      <video id="my-video" src="assets/cat.mp4" playsinline webkit-playsinline autoplay loop="true"></video>
+    </a-assets>
+
+  <!-- Display the video on a plane, for example -->
+  <a-video src="#my-video" width="16" height="9" position="0 0 -10" material="shader: chromakey; src: #alpha-video; color: 0.1 0.9 0.2"></a-video>
+  
       <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
       <a-camera
         id="camera"
